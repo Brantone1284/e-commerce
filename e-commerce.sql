@@ -13,7 +13,7 @@ CREATE TABLE product_category (
 -- Table: product
 CREATE TABLE product (
     product_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(150) NOT NULL,
+    name VARCHAR(100) NOT NULL,
     brand_id INT,
     category_id INT,
     base_price DECIMAL(10,2),
@@ -54,7 +54,7 @@ CREATE TABLE size_category (
 CREATE TABLE size_option (
     size_id INT AUTO_INCREMENT PRIMARY KEY,
     size_category_id INT,
-    label VARCHAR(20),
+    label VARCHAR(50),
     FOREIGN KEY (size_category_id) REFERENCES size_category(size_category_id)
 );
 

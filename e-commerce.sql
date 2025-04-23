@@ -41,7 +41,7 @@ CREATE TABLE product_image (
 -- Table: color
 CREATE TABLE color (
     color_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL
+    name varchar(50) NOT NULL
 );
 
 -- Table: size_category
